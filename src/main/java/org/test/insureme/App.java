@@ -30,12 +30,14 @@ public class App
    // System.setProperty("webdriver.chrome.driver", "/Users/shubham/Documents/softwares/chrome-driver/chromedriver");
 
        // System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
-        
+            System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
     WebDriverManager.chromedriver().setup();
     //setting properties
     ChromeOptions chromeOptions = new ChromeOptions();
     chromeOptions.addArguments("--headless");
     // open url
+        //chromeOptions.setBinary("//google-chrome");
+    
     System.out.println("Driver opening up the url in browser");	
     WebDriver driver = new ChromeDriver(chromeOptions);
     driver.get("http://3.110.32.51:8081/contact.html");	
