@@ -29,7 +29,7 @@ public class App
        //initializing the web driver
    // System.setProperty("webdriver.chrome.driver", "/Users/shubham/Documents/softwares/chrome-driver/chromedriver");
 
-        System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
+       // System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
         
     WebDriverManager.chromedriver().setup();
     //setting properties
